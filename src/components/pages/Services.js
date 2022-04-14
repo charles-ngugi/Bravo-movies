@@ -1,10 +1,14 @@
-import React from 'react';
-import '../../App.css';
+import React from 'react'
+import Footer from '../Footer'
+
 
 function Services() {
-  return 
+  return (
+    <>
     <h1 className='services'>SERVICES</h1>
-  
+    <Footer />
+    </>
+  )
 }
 
-export default Services;
+export default Services
