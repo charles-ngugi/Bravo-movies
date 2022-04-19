@@ -7,40 +7,40 @@ function Cards() {
   return (
     <div className='cards'>
 
-        <h1>Check this out!!</h1>
+        <h1>Movie genres available</h1>
         <div className='cards__container'>
             <div className='cards__wrapper'>
                 <ul className='cards__items'>
                     <CardItem 
-                    src='images/img-4.jpg' 
-                    text='Check this out!' 
-                    label='Adventure' 
+                    src='images/anim.jpg' 
+                    text='Animation' 
+                    label='Animations' 
                     path='/products'
                     />
                       <CardItem 
-                    src='images/img-8.jpg' 
-                    text='Check this out!' 
+                    src='images/ima.jpg' 
+                    text='Adventure Movies' 
                     label='Adventure' 
                     path='/products'
                     />
                 </ul>
                 <ul className='cards__items'>
                     <CardItem 
-                    src='images/img-7.jpg' 
-                    text='Check this out!' 
-                    label='Adventure' 
+                    src='images/uncharted_s270z86d_500x749.jpg' 
+                    text='Action Movies' 
+                    label='Action' 
                     path='/products'
                     />
                       <CardItem 
-                    src='images/img-6.jpg' 
-                    text='Check this out!' 
-                    label='Adventure' 
+                    src='images/dsad.jpg' 
+                    text='Horror Movies' 
+                    label='Horror' 
                     path='/products'
                     />
                        <CardItem 
-                    src='images/img-5.jpg' 
-                    text='Check this out!' 
-                    label='Adventure' 
+                    src='images/nn.jpg' 
+                    text='Investigative Movies' 
+                    label='Investigative' 
                     path='/products'
                     />
                 </ul>

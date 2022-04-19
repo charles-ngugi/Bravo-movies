@@ -21,7 +21,7 @@ function Footer() {
         <div className='footer-links'>
             <div className='footer-link-wrapper'>
                 <div className='footer-link-items'>
-                    <h2>Socail Links</h2>
+                    <h2>Social Links</h2>
                     <Link to='/'>Instagram</Link>
             <Link to='/'>Facebook</Link>
             <Link to='/'>Youtube</Link>
@@ -31,28 +31,9 @@ function Footer() {
             <div className='footer-link-wrapper'>
                 <div className='footer-link-items'>
                     <h2>About Us</h2>
-                    <Link to='sign-up'> How it works</Link>
-                    <Link to='sign-up'> How it works</Link>
-                    <Link to='sign-up'> How it works</Link>
-                    <Link to='sign-up'> How it works</Link>
-                </div>
-            </div>
-            <div className='footer-link-wrapper'>
-                <div className='footer-link-items'>
-                    <h2>About Us</h2>
-                    <Link to='sign-up'> How it works</Link>
-                    <Link to='sign-up'> How it works</Link>
-                    <Link to='sign-up'> How it works</Link>
-                    <Link to='sign-up'> How it works</Link>
-                </div>
-            </div>
-            <div className='footer-link-wrapper'>
-                <div className='footer-link-items'>
-                    <h2>About Us</h2>
-                    <Link to='sign-up'> How it works</Link>
-                    <Link to='sign-up'> How it works</Link>
-                    <Link to='sign-up'> How it works</Link>
-                    <Link to='sign-up'> How it works</Link>
+                    <Link to='sign-up'> History</Link>
+                    <Link to='sign-up'> Tasks</Link>
+                    <Link to='sign-up'> Working time</Link>
                 </div>
             </div>
         </div>
@@ -67,14 +48,14 @@ function Footer() {
             <small className='website-rights'>BRAVO © 2022</small>
             <div className='social-icons'>
                 <Link className='social-icon-link facebook'
-                to='/'
+                to='facebook.com'
                 target="_blank"
                 aria-label='Facebook'>
                     <i className='fab fa-facebook'/>
                 </Link>
                 <Link
               class='social-icon-link instagram'
-              to='/'
+              to='instagram.com'
               target='_blank'
               aria-label='Instagram'
             >
@@ -82,7 +63,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link youtube'
-              to='/'
+              to='youtube.com'
               target='_blank'
               aria-label='Youtube'
             >
@@ -90,7 +71,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link twitter'
-              to='/'
+              to='twitter.com'
               target='_blank'
               aria-label='Twitter'
             >
@@ -98,7 +79,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link twitter'
-              to='/'
+              to='https://www.linkedin.com/in/charles-ngugi-969601220/  '
               target='_blank'
               aria-label='LinkedIn'
             >

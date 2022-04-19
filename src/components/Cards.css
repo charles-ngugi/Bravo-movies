@@ -1,16 +1,15 @@
 .cards {
-  padding: 2rem;
+  padding: 4rem;
   background: #fff;
-  width: 100%;
+  /* flex: 1; */
 }
 
 h1 {
   text-align: center;
 }
 
-
 .cards__container {
-  display: flex;
+  /* display: flex; */
   flex-flow: column;
   align-items: center;
   max-width: 1120px;
@@ -19,11 +18,15 @@ h1 {
 }
 
 .cards__wrapper {
+  position: relative;
   margin: 50px 0 45px;
+  
 }
 
 .cards__items {
   margin-bottom: 24px;
+
+ 
 }
 
 .cards__item {
