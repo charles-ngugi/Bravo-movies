@@ -7,7 +7,7 @@ function Cards() {
   return (
     <div className='cards'>
 
-        <h1>Movie genres available</h1>
+        <h1>Available Genres</h1>
         <div className='cards__container'>
             <div className='cards__wrapper'>
                 <ul className='cards__items'>

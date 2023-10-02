@@ -18,7 +18,7 @@ function Footer() {
                 </form>
             </div>
         </section>
-        <div className='footer-links'>
+        {/* <div className='footer-links'>
             <div className='footer-link-wrapper'>
                 <div className='footer-link-items'>
                     <h2>Social Links</h2>
@@ -36,7 +36,7 @@ function Footer() {
                     <Link to='sign-up'> Working time</Link>
                 </div>
             </div>
-        </div>
+        </div> */}
     <section className='social-media'>
         <div className='social-media-wrap'>
             <div className='footer-logo'>
@@ -45,10 +45,14 @@ function Footer() {
                     <i className='fab fa-typo3' />
                 </Link>
             </div>
-            <small className='website-rights'>BRAVO © 2022</small>
+            <small className='website-rights'>BRAVO © 2023</small>
+            <div className='social-icon-phone phone'>
+                <i className='fas fa-phone' aria-label='Phone' />
+                <span> 0704661895/ 0743269039</span>
+              </div>
             <div className='social-icons'>
                 <Link className='social-icon-link facebook'
-                to='facebook.com'
+                to='https://www.linkedin.com/in/charles-ngugi-969601220/'
                 target="_blank"
                 aria-label='Facebook'>
                     <i className='fab fa-facebook'/>
@@ -56,22 +60,22 @@ function Footer() {
                 <Link
               class='social-icon-link instagram'
               to='instagram.com'
-              target='_blank'
+              target='instagram.com'
               aria-label='Instagram'
             >
               <i class='fab fa-instagram' />
             </Link>
             <Link
               class='social-icon-link youtube'
-              to='youtube.com'
-              target='_blank'
+              to='https://www.linkedin.com/in/charles-ngugi-969601220/'
+              target='youtube.com'
               aria-label='Youtube'
             >
               <i class='fab fa-youtube' />
             </Link>
             <Link
               class='social-icon-link twitter'
-              to='twitter.com'
+              to='https://www.linkedin.com/in/charles-ngugi-969601220/'
               target='_blank'
               aria-label='Twitter'
             >
@@ -79,7 +83,7 @@ function Footer() {
             </Link>
             <Link
               class='social-icon-link twitter'
-              to='https://www.linkedin.com/in/charles-ngugi-969601220/  '
+              to='https://www.linkedin.com/in/charles-ngugi-969601220/'
               target='_blank'
               aria-label='LinkedIn'
             >
@@ -87,7 +91,6 @@ function Footer() {
             </Link>
 
             </div>
-
         </div>
     </section>
     </div>
