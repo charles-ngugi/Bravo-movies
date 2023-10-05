@@ -19,7 +19,7 @@ function Cards() {
                     />
                       <CardItem 
                     src='images/ima.jpg' 
-                    text='Adventure Movies' 
+                    text='Adventure' 
                     label='Adventure' 
                     path='/products'
                     />
@@ -27,19 +27,19 @@ function Cards() {
                 <ul className='cards__items'>
                     <CardItem 
                     src='images/uncharted_s270z86d_500x749.jpg' 
-                    text='Action Movies' 
+                    text='Action' 
                     label='Action' 
                     path='/products'
                     />
                       <CardItem 
                     src='images/dsad.jpg' 
-                    text='Horror Movies' 
+                    text='Horror ' 
                     label='Horror' 
                     path='/products'
                     />
                        <CardItem 
                     src='images/nn.jpg' 
-                    text='Investigative Movies' 
+                    text='Investigative ' 
                     label='Investigative' 
                     path='/products'
                     />
