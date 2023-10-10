@@ -2,15 +2,34 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on PR
-'on': pull_request
+
+on:
+  pull_request:
+    branches:
+      - '*'
+
 jobs:
   build_and_preview:
-    if: '${{ github.event.pull_request.head.repo.full_name == github.repository }}'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: npm run build
-      - uses: FirebaseExtended/action-hosting-deploy@v0
+      - name: Checkout code
+        uses: actions/checkout@v2  # You can use v2 for faster checkout.
+
+      # Install Node.js and dependencies only if needed.
+      # You can adjust the Node.js version based on your project's requirement.
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 20.7.0  # Adjust this to your desired Node.js version.
+
+      - name: Install Dependencies
+        run: npm install  # Only if you have npm dependencies to install.
+
+      # In most cases, you don't need to run 'npm run build' for PR previews.
+      # You can consider skipping this step and deploying directly.
+
+      - name: Deploy to Firebase Hosting
+        uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_BRAVO_MOVIES }}'
