@@ -13,20 +13,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2  # You can use v2 for faster checkout.
+        uses: actions/checkout@v2
 
-      # Install Node.js and dependencies only if needed.
-      # You can adjust the Node.js version based on your project's requirement.
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 20.7.0  # Adjust this to your desired Node.js version.
+          node-version: 20.7.0  # Set the desired Node.js version.
+
+      - name: Set CI to false
+        run: echo "CI=false" >> $GITHUB_ENV
 
       - name: Install Dependencies
-        run: npm install  # Only if you have npm dependencies to install.
-
-      # In most cases, you don't need to run 'npm run build' for PR previews.
-      # You can consider skipping this step and deploying directly.
+        run: npm install
 
       - name: Deploy to Firebase Hosting
         uses: FirebaseExtended/action-hosting-deploy@v0
